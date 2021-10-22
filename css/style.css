@@ -1,0 +1,643 @@
+
+
+:root{
+    --mincolor:#8e7754;
+}
+.header{
+    font-family:  'Alegreya Sans SC', sans-serif;
+      width: 100%;
+        font-weight: normal;
+        background-color: #888;
+}
+.container{
+    width: 65%;
+    margin: auto;
+   
+}
+.header-img{
+    height: 90%;
+    width: 100%;  
+    position: relative;
+    background-image: url("http://www.engage.veented.com/bakery/wp-content/uploads/sites/27/2017/04/drew-coffman-1872.jpg");
+    background-position: center center;
+
+}
+*{
+    padding: 0;
+    margin: 0; 
+}
+/********************navbar*****************************/
+.navbar{
+    position: fixed;
+    width: 65%;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    left: 50%;
+    transform: translate(-50%,0);
+    padding-top: 24px;
+    z-index: 9;
+    -webkit-transform: translate(-50%,0);
+    -moz-transform: translate(-50%,0);
+    -ms-transform: translate(-50%,0);
+    -o-transform: translate(-50%,0);
+}
+.navbar-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;  
+    width: 40%;
+}
+.navbar-content li{
+    list-style: none;
+    font-size: 18px;
+    right: 0;
+    text-transform: capitalize;
+    margin-top:20px ;
+    cursor: pointer;
+}
+.navbar-content li a{
+    text-decoration: none; 
+    color: white;
+}
+.home{
+    opacity: 0.7;
+}
+.homediv{
+    height: 2px;
+    width: 45px;
+    background-color: var(--mincolor);
+    top: 0;
+}
+
+
+.link-hover:hover{
+color: var(--mincolor);
+}
+.blog{
+    margin-bottom: 2px;
+    position: relative;
+}
+.dropdown{
+    display: block;
+    position: absolute;
+    background-color: var(--mincolor);
+    margin:2px 0 27px -15px;
+    width: 180px;
+    padding-bottom: 10px;
+    visibility: hidden;
+    opacity: 0;
+    transform: visible 1s;
+    -webkit-transform: visible 1s;
+    -moz-transform: visible 1s;
+    -ms-transform: visible 1s;
+    -o-transform: visible 1s;
+}
+.dropdown li {
+padding-left: 10px;
+}
+.blog:hover .blog-link{
+   color: var(--mincolor);
+}
+.blog:hover .dropdown{
+    visibility: visible;
+    opacity: 1;
+}
+
+.logo{
+    width: 60%;
+    height: 48px;
+}
+.logo img{
+    width: 200px;
+    height: 100%;
+    cursor: pointer;
+}
+/****************************header-content******************/
+
+.header-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-37%);
+    background-color: transparent;
+    text-align: center;
+    height: 400px;
+    -webkit-transform: translate(-50%,-37%);
+    -moz-transform: translate(-50%,-37%);
+    -ms-transform: translate(-50%,-37%);
+    -o-transform: translate(-50%,-37%);
+}
+.header-content h3{
+    font-size: 23px;
+    margin-bottom: 20px;
+    color:rgba(255,255,255, .92);
+
+}
+.header-content h1{
+    font-size: 58px;
+    margin-bottom: 20px;
+    font-family:'Alegreya Sans SC', sans-serif;
+     color: white;
+}
+.header-content p{
+    margin-bottom: 30px;
+    font-size: 24px;
+    line-height: 40px;
+    color:rgba(255,255,255, .92);
+}
+.header-content .btn{
+    width: 140px;
+    height: 60px;
+    margin-right: 10px;
+    color: white;
+    font-size: 17px;
+    text-transform: capitalize;
+    border-radius: 5%;
+    cursor: pointer;
+}
+.header-btn1{
+    background-color: var(--mincolor);
+    border:1px solid var(--mincolor);
+    border-radius: 5%;
+}
+.header-btn2{
+    border: 2px solid white;
+    background-color: transparent;
+}
+.header-content .btn:hover{
+    background-color: white;
+    color: black;
+    border: white;
+}
+.kora-btn{
+    display: block;
+    position: relative;
+    border: 2px solid white;
+    background-color: transparent;
+    margin:120px 350px;
+    height: 60px;
+    width: 35px;
+    border-radius: 30px;
+    cursor: pointer;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+.kora-btn .kora{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 3;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation-duration: 1s;
+    animation-name:kora ;
+    animation-iteration-count: infinite;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+@keyframes kora{
+    form{top: 3;opacity: 1;}
+    to{top: 39px;opacity: 0;}
+}
+
+
+
+/****************************************body-content*************************/
+.item{
+    width: 100%;
+    margin: 80px 0;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+
+}
+.body-content-img{
+    width: 50%;
+    height: 600px;
+    margin-bottom: 60px; 
+}
+.body-content-img2{
+ width: 45%;
+ height: 450px;
+ margin-bottom: 60px;
+ background-color: red;
+}
+.img2{
+    width: 100%;
+    height: 100%;
+}
+.item-content1{
+    width: 50%;
+}
+.item-content2{
+    width: 55%;
+    padding: 100px 0;
+
+}
+.item-content{
+    padding: 100px 0;
+    margin-left: 70px;
+}
+.item-content h1{
+
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+.item-content p{
+    line-height: 25px;
+    margin-bottom: 30px;
+}
+.item-content i{
+    border: 1px solid rgba(0,0,0,.15);
+    color: var(--mincolor);
+    border-radius: 100%;
+    margin-right: 10px;
+    font-size: 23px;
+    text-align: center;
+    padding: 9px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+.i-text{
+    color:rgba(0,0,0, .92);
+    font-size: 17;
+}
+.list{
+    margin-bottom: 20px;
+}
+
+
+/********************our baking**********************/
+
+.our-baking-title{
+        text-align: center;
+        margin-bottom: 20px;
+        font-family: 'Alegreya Sans SC', sans-serif;;
+        font-size:30px ;
+}
+.our-baking-subtitle{
+    text-align: center;
+    font-size: 17px;
+    color: #888;
+    margin-bottom: 60px;
+
+}
+.our-baking-items{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   
+}
+.our-baking-item{
+    width: 31%; 
+    margin-bottom: 70px;
+}
+.our-baking-item img{
+    width: 100%;
+    height: 70%;
+    margin-bottom: 25px;
+}
+.our-baking-item h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.our-baking-item-p{
+    text-align: center;
+    line-height: 25px;
+}
+/*****************************Contact Information***********************************/
+.Contact-Information{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-content{
+    width: 50%;
+    padding-top:70px ;
+
+}
+.contact-content h1{
+   margin-bottom: 30px;
+   font-size: 32px;
+text-transform: capitalize;
+}
+.contact-content p{
+    line-height: 25px;
+    margin-bottom: 40px;
+}
+.contact-content span{
+    font-size: 17px;
+}
+.contactList{
+    list-style: none;
+    margin-top: 30px;
+}
+.contactList li{
+    margin-bottom: 30px;
+}
+.contactList li i{
+    border: 1px solid var(--mincolor);
+    background-color: var(--mincolor);
+    color: white;
+    padding: 8px;
+    border-radius: 50%;
+    transform: rotate(90deg);
+    font-size: 10px;
+    margin-right: 10px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+.contactImg{
+    width: 50%;
+    
+}
+.contactImg img{
+    width: 100%;
+    height: 90%;
+    margin-top:8% ;
+}
+
+/**********************footer***************************/
+.footer{
+    background-color: #403d38;
+    color: white;
+    margin-top: 70px;
+    padding-bottom: 90px;
+
+   
+  
+}
+.footer-list{
+    width: 65%;
+    margin: auto;
+     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+.footer-list-item{
+    width: 22%;
+         list-style: none;
+}
+.about-us h2{
+    margin-bottom: 20px;
+    font-size: 17px;
+    text-transform: capitalize;
+}
+.about-color{
+    color: #969696;
+}
+.footer-list ul li h2{
+
+    margin-bottom: 20px;
+}
+.last-li{
+   border-bottom: 1px solid rgba(255,255,255,0.05);
+   margin-bottom: 9px;
+   padding-bottom: 9px;
+color: #969696;
+font-size: 16px;
+}
+.last-li i{
+    margin-right: 9px;
+    font-size: 16px;
+}
+.last-footer{
+    background-color: #1b1b1b;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.last-footer .copyright{
+    margin-top: 30px;
+    color: #969696;
+    font-size: 15px;
+}
+.social-media{
+    margin-top: 30px;
+    font-size: 20px;
+
+}
+.social-media a {
+    background-color: #403d38;
+    margin-left: 7px;
+    border-radius: 50%;
+    border: 1px solid #403d38;
+    padding: 7px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.social-media a i{
+    color: #969696;
+    background-color: #403d38;
+}
+.facebook:hover .fa-facebook{
+    background-color: blue;
+    color: white;
+}
+.facebook:hover{
+    background-color: blue;
+    color: white;
+}
+.google:hover .fa-google-plus{
+    background-color: red;
+    color: white;
+}
+.google:hover{
+    background-color: red;
+    color: white;
+}
+.linkedin:hover .fa-linkedin{
+    background-color: rgb(131, 131, 228);
+    color: white;
+}
+.linkedin:hover{
+    background-color: rgb(131, 131, 241);
+    color: white;
+}
+.twitter:hover .fa-twitter{
+    background-color: rgb(99, 99, 228);
+    color: white;
+}
+.twitter:hover{
+    background-color: rgb(97, 97, 247);
+    color: white;
+}
+
+/*********************fixed************/
+.to-top{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #969696;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 15px;
+    color: transparent;
+    right: 15px;
+    cursor: pointer;
+    opacity: 0;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.to-top i{
+    color: #969696;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 20px;
+}
+.side{
+    right: 0;
+    width: 340px;
+    height: 900px;
+    background-color: transparent;
+    top: 0;
+    right: -300px;
+    position: fixed;
+}
+.right{
+    height: 80px;
+    position: fixed;
+    width: 40px;
+    margin-top: 150px;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 10% 0 0 10%;
+  
+}
+.cogs{
+    color:  #969696;
+    position: absolute;
+    left: 50%;
+    top: 15px;
+    transform: translate(-50%,0);
+    -webkit-transform: translate(-50%,0);
+    -moz-transform: translate(-50%,0);
+    -ms-transform: translate(-50%,0);
+    -o-transform: translate(-50%,0);
+}
+.shopping{
+    color:  #969696;
+    position: absolute;
+    left: 50%;
+    bottom: 15px;
+    transform: translate(-50%,0);
+    -webkit-transform: translate(-50%,0);
+    -moz-transform: translate(-50%,0);
+    -ms-transform: translate(-50%,0);
+    -o-transform: translate(-50%,0);
+}
+.cogs:hover , .shopping:hover {
+    color: var(--mincolor);
+}
+.alert{
+    padding: 2px 0;
+    height: 25px;
+    width: 110px;
+    text-align: center;
+    margin-left:-130px;
+    top: 160px;
+    cursor: pointer;
+    color: white;
+    background-color: var(--mincolor) ;
+    border: 0;
+    visibility: hidden;
+    position: fixed;
+}
+
+.alert2{
+    top: 196px;
+}
+
+
+
+.alert::after{
+    border-color: var(--mincolor);
+    background: var(--mincolor);
+    transform: rotate(45deg);
+    display: block;
+    content: '';
+    width: 7px;
+    height: 7px;
+    border: 1px solid var(--mincolor);
+    position: absolute;
+    border-left: 0;
+    border-bottom: 0;
+    top: 50%;
+    right: -4px;
+    margin-top: -3px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+
+.side-bar{
+    height: 1000px;
+    width: 300px;
+    background-color: palegoldenrod;
+    margin-left: 40px;
+    margin-top: -20px;
+    bottom: 0;
+    z-index: 999;
+    padding: 30px;
+}
+
+.color{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+.red{
+    background-color: red;
+}
+.black{
+    background-color: black;
+}
+.green{
+    background-color: green;
+}
+.pink{
+    background-color: pink;
+}
+.blue{
+    background-color: blue;
+}
+.mincolor{
+    background-color: #8e7754;
+}
+.engage{
+    width: 90%;
+    margin: auto;
+    background-color: var(--mincolor);
+    color: white;
+    height: 50px;
+    border: none;
+    font-size: large;
+}
